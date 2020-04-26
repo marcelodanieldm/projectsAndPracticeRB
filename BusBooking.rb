@@ -72,10 +72,10 @@ end
 
 suma=0
 for i in 0..9
-seat1 = @Bus.seats[i+suma]
-seat2 = @Bus.seats[i+suma+1]
-seat3 = @Bus.seats[i+suma+2]
-seat4 = @Bus.seats[i+suma+3]
+seat1 = @Bus.seats[i+suma].class == Fixnum ? "%2d" % @bus.asientos[i+suma]: @bus.asientos[i+suma]
+seat2 = @Bus.seats[i+suma+1].class == Fixnum ? "%2d" % @bus.asientos[i+suma+1]: @bus.asientos[i+suma+1]
+seat3 = @Bus.seats[i+suma+2].class == Fixnum ? "%2d" % @bus.asientos[i+suma+2]: @bus.asientos[i+suma+2]
+seat4 = @Bus.seats[i+suma+3].class == Fixnum ? "%2d" % @bus.asientos[i+suma+3]: @bus.asientos[i+suma+3]
 
 puts " [#{seat 1}] [#{seat 2}] [#{seat 3}] [#{seat 4}]"
 suma+=3
