@@ -7,6 +7,7 @@ The menu has the following options:
 - Book a seat.
 - Cancel a seat.
 - Exit.
+Option: 
 
 Developed in Ruby.
 
