@@ -7,6 +7,9 @@ end
 
 class Menu
   def mostrar_menu
+    def initialize
+      @exit = false
+    end
     puts  "---[[Eldani Tours Booking System]]---"
     puts  "1)Enter a passenger"
     puts  "2)Clear a passenger"
@@ -16,3 +19,9 @@ class Menu
   
 end
 end
+
+//Creating the object menu. 
+
+menu= Menu.new
+until menu.exit
+
