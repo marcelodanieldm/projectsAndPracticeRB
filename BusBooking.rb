@@ -18,7 +18,7 @@ def random_seats //se generan de forma aleatoria los asientos.
        
        loop do //
          if @seats[position].class == Fixnum
-           @seats[position] = "Booked"
+           @seats[position] = "**"
            break
          elseif @asientos[position].class == String
            position = rand*40
@@ -26,7 +26,17 @@ def random_seats //se generan de forma aleatoria los asientos.
   
 end
 end
-     end
+end
+   end
+  
+  def enter_passenger num
+    if @seats [num -1].class== Fixnum
+      @seats[num-1] = "**"
+      return true
+    else
+      return false
+    end
+    
 
 class Menu
   def display_menu
@@ -64,6 +74,12 @@ end
           
         private
         def enter_passenger
+          print "Enter passenger number"
+          seatnum= gets.chomp.to_i
+          if @bus.enter_passenger seatnum
+            puts "--- Seat succesfully booked ---"
+          else
+            puts "--- Unable to book this seat---"
         end
         def clear_passenger
         end
@@ -77,7 +93,7 @@ seat2 = @Bus.seats[i+suma+1].class == Fixnum ? "%2d" % @bus.asientos[i+suma+1]: 
 seat3 = @Bus.seats[i+suma+2].class == Fixnum ? "%2d" % @bus.asientos[i+suma+2]: @bus.asientos[i+suma+2]
 seat4 = @Bus.seats[i+suma+3].class == Fixnum ? "%2d" % @bus.asientos[i+suma+3]: @bus.asientos[i+suma+3]
 
-puts " [#{seat 1}] [#{seat 2}] [#{seat 3}] [#{seat 4}]"
+puts " [#{seat1}] [#{seat2}] [#{seat3}] [#{seat4}]"
 suma+=3
         end
         
