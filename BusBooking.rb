@@ -7,12 +7,12 @@ end
 
 class Menu
   def mostrar_menu
-    ---[[Eldani Tours]]---
-      1)Enter a passenger
-      2)Clear a passenger
-      3)Show bus
-      4)Exit
-      Insert Option: 
+    puts  "---[[Eldani Tours Booking System]]---"
+    puts  "1)Enter a passenger"
+    puts  "2)Clear a passenger"
+    puts  "3)Show bus"
+    puts   "4)Exit"
+    puts   "Insert Option: " 
   
 end
 
