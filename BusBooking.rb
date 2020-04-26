@@ -37,6 +37,15 @@ end
       return false
     end
     
+     def clear_passenger num
+    if @seats [num -1].class== Fixnum
+      @seats[num-1] = "**"
+      return false
+    else
+      @seats[num -1] = num
+      return true
+    end
+    
 
 class Menu
   def display_menu
@@ -82,6 +91,14 @@ end
             puts "--- Unable to book this seat---"
         end
         def clear_passenger
+          print "Enter passenger number"
+          seatnum= gets.chomp.to_i
+          if @bus.clear_passenger seatnum
+            puts "--- Seat succesfully cleared ---"
+          else
+            puts "--- Unable to clear this seat---"
+          
+          
         end
         def show_seats
           puts "--- Eldani Tours Booking System"---"
