@@ -2,6 +2,9 @@
 //creating classes bus, options and menu.
   
 class Bus
+                   //Creating an array. I convert the quantity of seats to array of 40 elements. 
+def initialize
+@asientos = (1..40)to_a
 
 end
 
@@ -9,6 +12,7 @@ class Menu
   def display_menu
     def initialize
       @exit = false
+      @bus = Bus.new
     end
     puts  "---[[Eldani Tours Booking System]]---"
     puts  "1)Enter a passenger"
@@ -36,7 +40,22 @@ end
         end    
         end
         
-        //I create the methods enter_passenger, clear, show seats.
+        //I create the methods enter_passenger, clear, show seats. Encapsulando.
+          
+        private
+        def enter_passenger
+        end
+        def clear_passenger
+        end
+        def show_seats
+          puts "--- Eldani Tours Booking System"---"
+for i in 0..9
+seat1 =
+seat2 =
+seat3 =
+seat4 =
+        end
+        
           
         
 end
