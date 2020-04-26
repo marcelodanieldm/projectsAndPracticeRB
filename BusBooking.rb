@@ -3,10 +3,30 @@
   
 class Bus
                    //Creating an array. I convert the quantity of seats to array of 40 elements. 
+atttr_reader: seats
 def initialize
-@asientos = (1..40)to_a
-
+@seats = (1..40)to_a
+  random_seats
 end
+
+def random_seats //se generan de forma aleatoria los asientos.
+    q = rand *26+5
+   //for para recorrer la cantidad
+     
+     for i in 1..q
+       position = rand*40 //random position
+       
+       loop do //
+         if @seats[position].class == Fixnum
+           @seats[position] = "Booked"
+           break
+         elseif @asientos[position].class == String
+           position = rand*40
+           redo //reinicia bucle
+  
+end
+end
+     end
 
 class Menu
   def display_menu
@@ -57,8 +77,8 @@ seat2 = @Bus.seats[i+suma+1]
 seat3 = @Bus.seats[i+suma+2]
 seat4 = @Bus.seats[i+suma+3]
 
-puts ""
-suma=3
+puts " [#{seat 1}] [#{seat 2}] [#{seat 3}] [#{seat 4}]"
+suma+=3
         end
         
           
