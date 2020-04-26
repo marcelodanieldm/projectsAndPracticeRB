@@ -12,6 +12,7 @@ class Menu
       2)Clear a passenger
       3)Show bus
       4)Exit
+      Insert Option: 
   
 end
 
