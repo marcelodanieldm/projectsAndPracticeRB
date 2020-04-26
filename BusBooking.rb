@@ -53,9 +53,9 @@ end
 suma=0
 for i in 0..9
 seat1 = @Bus.seats[i+suma]
-seat2 = @Bus.seats[i+suma]
-seat3 = @Bus.seats[i+suma]
-seat4 = @Bus.seats[i+suma]
+seat2 = @Bus.seats[i+suma+1]
+seat3 = @Bus.seats[i+suma+2]
+seat4 = @Bus.seats[i+suma+3]
 
 puts ""
 suma=3
