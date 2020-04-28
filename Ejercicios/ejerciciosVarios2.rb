@@ -11,3 +11,5 @@ costo_hora = gets.to_f
 sueldo = horas_trabajadas * costo_hora
 puts "El sueldo total del operario es "
 puts sueldo
+
+
