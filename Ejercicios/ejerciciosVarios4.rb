@@ -5,8 +5,7 @@ mostrar por pantalla el perímetro del mismo
 =end
 
 lado1= gets.to_i
-lado2= gets.to_i
-perimetro= lado1*lado2
+perimetro= lado*4
 puts = "el perimetro del cuadrado es: #{perimetro}"
 
 
